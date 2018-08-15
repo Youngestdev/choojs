@@ -1,0 +1,23 @@
+{
+  "name": "choojs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youngestdev/choojs.git"
+  },
+  "keywords": [],
+  "author": "Abdulazeez Abdulazeez Adeshina <laisibizness@gmail.com> (http://twitter.com/kvng_zeez)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Youngestdev/choojs/issues"
+  },
+  "homepage": "https://github.com/Youngestdev/choojs#readme",
+  "dependencies": {
+    "choo": "^6.13.0"
+  }
+}
