@@ -1,23 +1,27 @@
 {
-  "name": "choojs",
+  "name": "newchooapp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "bankai build index.js",
+    "create": "choo-scaffold",
+    "inspect": "bankai inspect index.js",
+    "start": "bankai start index.js",
+    "test": "standard && npm run test-deps",
+    "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Youngestdev/choojs.git"
-  },
-  "keywords": [],
-  "author": "Abdulazeez Abdulazeez Adeshina <laisibizness@gmail.com> (http://twitter.com/kvng_zeez)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Youngestdev/choojs/issues"
-  },
-  "homepage": "https://github.com/Youngestdev/choojs#readme",
   "dependencies": {
-    "choo": "^6.13.0"
+    "auth0-js": "^9.7.3",
+    "choo": "^6.13.0",
+    "choo-service-worker": "^2.4.0",
+    "sheetify": "^7.3.3",
+    "tachyons": "^4.11.1"
+  },
+  "devDependencies": {
+    "bankai": "^9.14.0",
+    "choo-devtools": "^2.5.1",
+    "choo-scaffold": "^1.2.0",
+    "dependency-check": "^3.2.0",
+    "standard": "^11.0.1"
   }
 }
