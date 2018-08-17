@@ -8,57 +8,57 @@ function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
 
   return html`
-    <body class="code lh-copy">
-      <main class="pa3 cf center">
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>1.</h2>
-          <p>
+    <body class="paper">
+      <main>
+        <section class="card">
+          <h2 class="card-header">1.</h2>
+          <p class="card-body">
             Welcome to your new Choo application.
             We're very happy you've made it this far.
           </p>
 
-          <p>
+          <p class="card-body">
             You're now in control of your own Choo app. The moment you decide to
             deploy it, it'll work offline and on any device.
           </p>
 
-          <br>
+
         </section>
 
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>2.</h2>
+        <section class="card">
+          <h2 class="card-header">2.</h2>
 
-          <p>
+          <p class="card-body">
             We've outfitted your project with a small selection of commands to
             help you achieve results faster:
           </p>
 
           <ul>
             <li class="mb3">
-              <strong>npm start</strong><br>
+              <strong>npm start</strong>
               start your project for local development.
             </li>
             <li class="mb3">
-              <strong>npm run build</strong><br>
+              <strong>npm run build</strong>
               compile your project for production.
             </li>
             <li class="mb3">
-              <strong>npm run inspect</strong><br>
+              <strong>npm run inspect</strong>
               visualize your project's dependencies.
             </li>
             <li class="mb3">
-              <strong>npm run create</strong><br>
+              <strong>npm run create</strong>
               scaffold a new file.
             </li>
           </ul>
 
-          <br>
+          
         </section>
 
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>3.</h2>
+        <section class="card">
+          <h2 class="card-header">3.</h2>
 
-          <p>
+          <p class="card-body">
             Your project also comes with a few directories. These names have
             special meanings for the build tool, so it's good to know what they
             do.
@@ -66,50 +66,50 @@ function view (state, emit) {
 
           <ul>
             <li class="mb3">
-              <strong>assets/</strong><br>
+              <strong>assets/</strong>
               Static files that can be served up, such as images and fonts.
             </li>
             <li class="mb3">
-              <strong>components/</strong><br>
+              <strong>components/</strong>
               Reusable fragments that can be composed into views.
             </li>
             <li class="mb3">
-              <strong>stores/</strong><br>
+              <strong>stores/</strong>
               Pieces of logic that are shared by multiple components.
             </li>
             <li class="mb3">
-              <strong>views/</strong><br>
+              <strong>views/</strong>
               Combinations of components that are mapped to routes.
             </li>
           </ul>
 
-          <br>
+          
         </section>
 
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>4.</h2>
+        <section class="card">
+          <h2 class="card-header">4.</h2>
 
-          <p>
+          <p class="card-body">
             So far we've provided you with one base view, <a
             href="/oh-no">one fallback view</a>, and one store. This serves
             as an example. A place to start from. It's your project now, so
             go ahead and delete them once you know how they work.
           </p>
 
-          <p>Number of clicks stored: ${state.totalClicks}</p>
+          <p class="card-body">Number of clicks stored: ${state.totalClicks}</p>
 
           <button class="dim ph3 ba bw1 pv2 b--black pointer bg-white"
             onclick=${handleClick}>
             Emit a click event
           </button>
 
-          <br><br>
+          
         </section>
 
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>5.</h2>
+        <section class="card">
+          <h2 class="card-header">5.</h2>
 
-          <p>
+          <p class="card-body">
             To make your development journey more pleasant, we've also
             included <a
             href="https://github.com/choojs/choo-devtools">devtools</a>. If
@@ -118,29 +118,29 @@ function view (state, emit) {
 
             <ul>
               <li class="mb3">
-                <strong>choo.state</strong><br>
+                <strong>choo.state</strong>
                 Log the current application state.
               </li>
               <li class="mb3">
-                <strong>choo.log</strong><br>
+                <strong>choo.log</strong>
                 Log the last 150 events received by the event bus.
               </li>
               <li class="mb3">
-                <strong>choo.emit</strong><br>
+                <strong>choo.emit</strong>
                 Emit an event inside the application event bus.
               </li>
               <li class="mb3">
-                <strong>choo.help</strong><br>
+                <strong>choo.help</strong>
                 See an overview of all available commands.
               </li>
             </ul>
           </p>
         </section>
 
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>6.</h2>
+        <section class="card">
+          <h2 class="card-header">6.</h2>
 
-          <p>
+          <p class="card-body">
             And that's about it! Thanks for reading. If you have any
             questions, check out the <a  href="https://choo.io">docs</a> or reach
             out on <a href="https://github.com/choojs/choo">GitHub</a> or <a

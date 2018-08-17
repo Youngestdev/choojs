@@ -1,5 +1,5 @@
 {
-  "name": "newchooapp",
+  "name": "New Choo App",
   "short_name": "newchooapp",
   "description": "To test ChooJS and build frontend apps with it.",
   "start_url": "/",
@@ -7,7 +7,7 @@
   "background_color": "#000",
   "theme_color": "#000",
   "icons": [{
-    "src": "/assets/icon.png",
+    "src": "/assets/icon.jpg",
     "type": "image/png",
     "sizes": "512x512"
   }]
