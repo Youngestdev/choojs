@@ -3,7 +3,9 @@ var choo = require('choo')
 
 css('./assets/css/paper.min.css')
 
-var app = choo()
+var app = choo({
+  hash: false
+})
 if (process.env.NODE_ENV !== 'production') {
   app.use(require('choo-devtools')())
 } else {
